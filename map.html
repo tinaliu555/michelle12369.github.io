@@ -11,18 +11,17 @@
 </head>
 
 <body>
-	<div class="margin-bottom">
     <nav>
         <a href="#" id="hamburger"><img src="img/left.png" alt="" width="50px"></a>
+        <img src="http://placehold.it/150x70" id="logo">
         <a href="#" id="search"><img src="img/right.png" alt="" width="50px"></a>
     </nav>
-    
+    <div id="load"></div>
     <header>
-    	<img src="http://placehold.it/150x70" id="logo">
-    	<h2>公館站 到 動物園</h2>
+        <h2>公館站 到 動物園</h2>
     </header>
-    <section>
-        <div id="map_canvas"></div>
+    <section id="article">
+        <iframe src="f.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
         <div class="as">
             <button class="classification" id="spot">景點</button>
             <button class="classification" id="food">餐廳</button>
@@ -35,17 +34,12 @@
             </p>
         </div>
     </section>
-    </div>
     <footer>
         <a href="#"><img src="img/down.png" alt="" id="down-pic"></a>
     </footer>
     <script src="js/jquery-2.2.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2jJOifLgCQAwQ5W5wEAa_iIN7IBaNtXA&callback=initMap" async defer></script>
-    <script src="js/map2.js"></script>
-
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
