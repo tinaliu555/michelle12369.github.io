@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>City Bike</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="margin-bottom">
+    <nav>
+        <a href="#" id="hamburger"><img src="img/left.png" alt="" width="50px"></a>
+        <a href="#" id="search"><img src="img/right.png" alt="" width="50px"></a>
+    </nav>
+    
+    <header>
+    	<img src="http://placehold.it/150x70" id="logo">
+    	<h2>公館站 到 動物園</h2>
+    </header>
+    <section>
+        <div id="map_canvas"></div>
+        <div class="as">
+            <button class="classification" id="spot">景點</button>
+            <button class="classification" id="food">餐廳</button>
+            <button class="classification" id="rest">驛站</button>
+            <button class="classification" id="repair">修車站</button>
+        </div>
+        <div class="intro">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;從公館捷運站出發往自來水園區方向走，可以在永福橋下的景福自行車租借站租台自行車。往新店溪上游方向，街景美溪後左轉至景美溪左岸自行車道，即可至台北市立動物園。因為動物園不開放自行車進入，出借的自行車可以在木柵出借站歸還。如果是自有自行車可停放在捷運站自行車停車處。
+            </p>
+        </div>
+    </section>
+    </div>
+    <footer>
+        <a href="#"><img src="img/down.png" alt="" id="down-pic"></a>
+    </footer>
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2jJOifLgCQAwQ5W5wEAa_iIN7IBaNtXA&callback=initMap" async defer></script>
+    <script src="js/map2.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
