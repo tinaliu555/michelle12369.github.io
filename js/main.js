@@ -25,7 +25,8 @@ var IsReportDisplay=false;
 $("#down-pic").on("click", function() {
     if(!IsReportDisplay)
     {
-        $("#report").css("display","block");
+        // $("#report").css("display","block");
+        $("#report").slideToggle("slow");
         IsReportDisplay=true;
     }
     else
