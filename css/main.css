@@ -81,6 +81,11 @@ header {
     background-color: rgb(85, 115, 193);
 }
 
+#Barrier{
+    flex: 1;
+    background-color: rgb(0, 0, 0);
+}
+
 .classification:hover {
     text-decoration: none;
     color: white;
@@ -95,11 +100,57 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    padding-left: 40%;
-    background-color: white;
 }
 
 #down-pic {
     width: 30%;
+    margin-left: 35%;
     max-width: 100px;
+}
+
+#report{
+    display:none;
+    width:300px;
+    height:400px;
+    margin-left: 10px;
+    background-color: gray;
+    align-content: center;
+}
+
+#report_title{
+    text-align:center;
+    margin-left: 30%;
+    font-size:2em;
+    font-weight: bold;
+}
+
+.report_as{
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.report_classification {
+    border-width: 0;
+    width:100px;
+    border-radius: 3px;
+    margin: 10px 3%;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+#item-info{
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+#picData{
+    width:200px;
+    
+}
+
+#typeinfo{
+    height:100px;
+    
 }

@@ -27,6 +27,7 @@
             <button class="classification" id="food">餐廳</button>
             <button class="classification" id="rest">驛站</button>
             <button class="classification" id="repair">修車站</button>
+            <button class="classification" id="Barrier">路障</button>
         </div>
         <div class="intro">
             <p>
@@ -36,6 +37,23 @@
     </section>
     <footer>
         <a href="#"><img src="img/down.png" alt="" id="down-pic"></a>
+        <div id="report">
+            <span id="report_title">回報類型</span>
+            <div class="report_as">
+            <button class="report_classification" id="spot">景點</button>
+            <button class="report_classification" id="food">餐廳</button><br>
+            <button class="report_classification" id="rest">驛站</button>
+            <button class="report_classification" id="repair">修車站</button><br>
+            <button class="report_classification" id="Barrier">路障</button>
+            </div>
+            <form id="item-info">
+                <div class="picBox"></div>
+                <input id="picData" type="file" title="add Images" accept="image/*" name="pic"><br>
+                <textarea id="typeinfo" cols="28" rows="5">輸入介紹</textarea>
+                <input type="submit" value="送出表單">
+            </form>
+        </div>
+        </div>
     </footer>
     <script src="js/jquery-2.2.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
