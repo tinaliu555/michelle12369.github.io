@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--         <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script> -->
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <h2>公館站 到 動物園</h2>
     </header>
     <section id="article">
-        <iframe src="f.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+        <iframe id="embeded" src="f.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
         <div class="as">
             <button class="classification" id="spot">景點</button>
             <button class="classification" id="food">餐廳</button>
@@ -36,27 +37,34 @@
         </div>
     </section>
     <footer>
-        <a href="#"><img src="img/down.png" alt="" id="down-pic"></a>
+        <a href="#" id="getPos"><img src="img/down.png" alt="" id="down-pic"></a>
         <div id="report">
             <span id="report_title">回報類型</span>
             <div class="report_as">
-            <button class="report_classification" id="spot">景點</button>
-            <button class="report_classification" id="food">餐廳</button><br>
-            <button class="report_classification" id="rest">驛站</button>
-            <button class="report_classification" id="repair">修車站</button><br>
-            <button class="report_classification" id="Barrier">路障</button>
+                <button class="report_classification" id="spot">景點</button>
+                <button class="report_classification" id="food">餐廳</button>
+                <br>
+                <button class="report_classification" id="rest">驛站</button>
+                <button class="report_classification" id="repair">修車站</button>
+                <br>
+                <button class="report_classification" id="Barrier">路障</button>
             </div>
             <form id="item-info">
                 <div class="picBox"></div>
-                <input id="picData" type="file" title="add Images" accept="image/*" name="pic"><br>
+                <input id="picData" type="file" title="add Images" accept="image/*" name="pic">
+                <br>
                 <textarea id="typeinfo" cols="28" rows="5">輸入介紹</textarea>
                 <input id="send" type="submit" value="送出表單">
             </form>
         </div>
         </div>
     </footer>
+    <!--     <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script> -->
     <script src="js/jquery-2.2.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.0.4/firebase.js"></script>
+    <script src="js/fb.js"></script>
+    <!-- <script src="js/map2.js"></script> -->
     <script src="js/main.js"></script>
 </body>
 
