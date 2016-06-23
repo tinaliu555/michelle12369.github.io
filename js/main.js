@@ -7,7 +7,7 @@ var config = {
 
 var f2 = firebase.initializeApp(config, "Secondary");
 //get current place location
-var path=window.location.pathname.split("/")[0].split(".")[0];
+var path=window.location.pathname.split("/")[1].split(".")[0];
 console.log(path);
 var storageRef = f2.storage().ref();
 var clicks = [true, true, true, true, true];
