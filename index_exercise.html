@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="user-scalable=no">
+  <title>City Bike</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="./css/listcss.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&subset=latin,latin-ext,cyrillic" rel="stylesheet" type="text/css">
+   <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link rel=stylesheet type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+<div class="all">
+  <div id="header">
+    <img src="./img/menu-options.png" class="img-responsive nav" alt="menu" data-toggle="modal" data-target="#myModal2">
+    <img src="./img/logo.png" class="img-responsive" id="cityBikeLogo" alt="City Bike logo">
+    <img src="./img/magnifying-glass.png"
+     class="img-responsive nav" alt="search" data-toggle="modal" data-target="#myModal">
+  </div>
+  <div class="container">
+    <p id="title" class="row">運動挑戰</p>
+    <div id="routes-list">
+    <a href="route8.html">
+     <div class="routes r8">
+      <h1>
+        <p class="start startroute8">南港高工</p>
+        <img src="./img/right-arrow.png" class="img-responsive arrow" alt="arrow">
+        <p class="end endroute8">劍潭</p>
+        <canvas id="rain" width="130" height="130"></canvas>
+        </h1>
+      <h2>
+        時程&nbsp; <p class="time">120</p>&nbsp;分鐘 &nbsp; &nbsp;路程&nbsp; <p class="distance">22</p>&nbsp;公里 &nbsp; &nbsp;台北市
+      </h2>
+    </div>
+</a>
+    <a href="route9.html">
+    <div class="routes r9">
+      <h1>
+        <p class="start startroute9">北投</p>
+        <img src="./img/right-arrow.png" class="img-responsive arrow" alt="arrow">
+        <p class="end endroute9">北投</p>
+        <canvas id="route1" width="130" height="130"></canvas>
+        </h1>
+      <h2>
+        時程&nbsp; <p class="time">105</p>&nbsp;分鐘 &nbsp; &nbsp;路程&nbsp; <p class="distance">20</p>&nbsp;公里 &nbsp; &nbsp;台北市
+      </h2>
+    </div>
+</a>
+<a href="route10.html">
+    <div class="routes r10">
+      <h1>
+        <p class="start startroute10">江子翠</p>
+        <img src="./img/right-arrow.png" class="img-responsive arrow" alt="arrow">
+        <p class="end endroute10">土城</p>
+        <canvas id="route2" width="130" height="130"></canvas>
+        </h1>
+      <h2>
+        時程&nbsp; <p class="time">95</p>&nbsp;分鐘 &nbsp; &nbsp;路程&nbsp; <p class="distance">18</p>&nbsp;公里 &nbsp; &nbsp;新北市
+      </h2>
+    </div>
+  </a>
+
+  </div>
+</div>
+</div>
+<!--  -->
+
+<!-- == -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="./img/magnifying-glass.png"
+     class="img-responsive nav" alt="search">
+        <!--  <h4 class="modal-title">Search Now</h4> -->
+       <div id="heading">
+                        <br>
+                        <br>
+                        <br>
+                        <p class="label" for="cboPlatform">起點</p>
+                        <select id="ChooseTeam1">
+                            <option value=""></option>
+                            <option value="LAA">公館</option>
+                            <option value="HOU">武荖坑</option>
+                            <option value="OAK">銅鑼</option>
+                            <option value="TOR">木柵</option>
+                            <option value="ATL">南港</option>
+                            <option value="MIL">萬里</option>
+                            <option value="STL">廣天宮</option>
+                            <option value="KC">南港高工</option>
+                            <option value="CHC">北投</option>
+                            <option value="ARI">江子翠</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div id="heading">
+                        <p class="label" for="cboPlatform">終點</p>
+                        <select id="ChooseTeam2">
+                            <option value=""></option>
+                            <option value="LAA">動物園</option>
+                            <option value="HOU">東山河</option>
+                            <option value="OAK">九湖村</option>
+                            <option value="TOR">貓空</option>
+                            <option value="ATL">六張犁</option>
+                            <option value="MIL">金山</option>
+                            <option value="STL">鳳山寺</option>
+                            <option value="KC">劍潭</option>
+                            <option value="CHC">北投</option>
+                            <option value="ARI">土城 </option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div id="heading">
+                        <p class="label" for="cboPlatform">路程</p>
+                        <select id="ChooseTeam3">
+                            <option value=""></option>
+                            <option value="OAK">2公里</option>
+                            <option value="HOU">6公里</option>
+                            <option value="LAA">8公里</option>
+                            <option value="STL">9公里</option>
+                            <option value="MIL">9.2公里</option>
+                            <option value="ATL">12公里</option>
+                            <option value="TOR">13公里</option>
+                            <option value="ARI">18公里</option>
+                            <option value="CHC">20公里</option>
+                            <option value="KC">22公里</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div id="heading">
+                        <p class="label" for="cboPlatform">時間</p>
+                        <select id="ChooseTeam4">
+                            <option value=""></option>
+                            <option value="OAK">10分鐘</option>
+                            <option value="HOU">30分鐘</option>
+                            <option value="LAA">35分鐘</option>
+                            <option value="STL">45分鐘</option>
+                            <option value="MIL">50分鐘</option>
+                            <option value="ATL">55分鐘</option>
+                            <option value="TOR">59分鐘</option>
+                            <option value="ARI">95分鐘</option>
+                            <option value="CHC">105分鐘</option>
+                            <option value="KC">120分鐘</option>
+                        </select>
+                    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="button" class="btn2 btn-default" data-dismiss="modal">GO !</button>
+      </div>    
+    </div>
+  </div>
+</div>
+  <!-- == -->
+<!-- menu -->
+<div class="modal fade" id="myModal2" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="index_city.html" role="button" class="btn btn-default btn-lg btn-block" id="city-routes" >
+         <img src="img/cityscape.png" class="icon">
+         <p class="city">都 市 休 閒</p>
+        </a>
+
+        <a href="index_natural.html" role="button" class="btn btn-default btn-lg btn-block" id="nature-routes">
+          <img src="img/forest.png" class="icon">
+          <p class="nature">自 然 踏 青</p>
+        </q>
+        <a href="index_exercise.html" role="button" class="btn btn-default btn-lg btn-block" id="sport-routes">
+          <img src="img/transport.png" class="icon">
+          <p class="sport">運 動 挑 戰</p>
+       </a>
+     </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- end of menu -->
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+<script src="./js/listjs.js"></script>
+<script src="js/search.js"></script>
+  <!--  -->
+</body>
+</html>

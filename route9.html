@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>City Bike</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/route9.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="all">
+        <nav>
+            <img src="img/menu-options.png" id="hamburger" alt="menu" data-toggle="modal" data-target="#myModal2">
+            <img src="img/logo.png" id="logo" alt="City Bike logo">
+            <img src="img/magnifying-glass.png" id="search" alt="search" data-toggle="modal" data-target="#myModal">
+        </nav>
+        <div id="load"></div>
+        <header>
+            <h4>北投溫泉自行車道</h4>
+        </header>
+        <section id="article">
+            <iframe id="embeded" src="iframe/frame9.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+            <div class="info">
+                <div class="as">
+                    <button class="classification" id="spot">景點</button>
+                    <button class="classification" id="food">餐廳</button>
+                    <button class="classification" id="rest">驛站</button>
+                    <button class="classification" id="repair">維修</button>
+                    <button class="classification" id="Barrier">路障</button>
+                </div>
+                <div class="intro">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;近年來，隨著環保與健康意識的活躍，許多人便開始騎乘單車作為休閒養身之道，因而成為最為熱門的休閒活動。政府為民之便，於多處著名觀光景點，設置了自行車道，並配合當地人文及景觀特色，使得每段鐵馬路程多了豐富又多元的深度體驗。而隨著單車趨勢的主流化，結合了自行車道社區豐富的風俗民情，也讓單車之旅多了獨特的休閒饗宴。 位於台北市北投區的北投溫泉自行車道，其自行車道路線從大同公司開始，沿途行經照明淨寺、中和禪寺、地熱谷、北投文物館、新北投公園等區，騎乘單車環遊其中，可欣賞當地明媚的風光景致盡收眼底，於視野上可說是絕佳的饗宴。若是哪天您來到了台北北投區，不妨呼朋引伴或是攜家帶眷共同體驗單車行，享受休閒樂活的旅程，相信這是一趟具意義價值的單車之旅。
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href="#" id="getPos"><img src="img/down.png" alt="" id="down-pic"></a>
+            <div id="report">
+                <span id="report_title">回報類型</span>
+                <div class="report_as">
+                    <button class="report_classification" id="spot">景點</button>
+                    <button class="report_classification" id="food">餐廳</button>
+                    <br>
+                    <button class="report_classification" id="rest">驛站</button>
+                    <button class="report_classification" id="repair">維修</button>
+                    <br>
+                    <button class="report_classification" id="Barrier">路障</button>
+                </div>
+                <form id="item-info">
+                    <div class="picBox"></div>
+                    <input id="picData" type="file" title="add Images" accept="image/*" name="pic">
+                    <br>
+                    <textarea id="typeinfo" cols="28" rows="5" placeholder="在此輸入簡介"></textarea>
+                    <input id="send" type="submit" value="送出表單">
+                </form>
+            </div>
+    </div>
+    </footer>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="img/magnifying-glass.png" class="img-responsive nav" alt="search">
+                    <!--  <h4 class="modal-title">Search Now</h4> -->
+                    <div class="heading">
+                        <br>
+                        <p class="label" for="cboPlatform">起點</p>
+                        <select id="ChooseTeam1">
+                            <option value=""></option>
+                            <option value="LAA">公館</option>
+                            <option value="HOU">武荖坑</option>
+                            <option value="OAK">銅鑼</option>
+                            <option value="TOR">木柵</option>
+                            <option value="ATL">南港</option>
+                            <option value="MIL">萬里</option>
+                            <option value="STL">廣天宮</option>
+                            <option value="KC">南港高工</option>
+                            <option value="CHC">北投</option>
+                            <option value="ARI">江子翠</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="heading">
+                        <p class="label" for="cboPlatform">終點</p>
+                        <select id="ChooseTeam2">
+                            <option value=""></option>
+                            <option value="LAA">動物園</option>
+                            <option value="HOU">東山河</option>
+                            <option value="OAK">九湖村</option>
+                            <option value="TOR">貓空</option>
+                            <option value="ATL">六張犁</option>
+                            <option value="MIL">金山</option>
+                            <option value="STL">鳳山寺</option>
+                            <option value="KC">劍潭</option>
+                            <option value="CHC">北投</option>
+                            <option value="ARI">土城 </option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="heading">
+                        <p class="label" for="cboPlatform">路程</p>
+                        <select id="ChooseTeam3">
+                            <option value=""></option>
+                            <option value="OAK">2公里</option>
+                            <option value="HOU">6公里</option>
+                            <option value="LAA">8公里</option>
+                            <option value="STL">9公里</option>
+                            <option value="MIL">9.2公里</option>
+                            <option value="ATL">12公里</option>
+                            <option value="TOR">13公里</option>
+                            <option value="ARI">18公里</option>
+                            <option value="CHC">20公里</option>
+                            <option value="KC">22公里</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="heading">
+                        <p class="label" for="cboPlatform">時間</p>
+                        <select id="ChooseTeam4">
+                            <option value=""></option>
+                            <option value="OAK">10分鐘</option>
+                            <option value="HOU">30分鐘</option>
+                            <option value="LAA">35分鐘</option>
+                            <option value="STL">45分鐘</option>
+                            <option value="MIL">50分鐘</option>
+                            <option value="ATL">55分鐘</option>
+                            <option value="TOR">59分鐘</option>
+                            <option value="ARI">95分鐘</option>
+                            <option value="CHC">105分鐘</option>
+                            <option value="KC">120分鐘</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="button" class="btn2" data-dismiss="modal">GO !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- == -->
+    <!-- menu -->
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                   <a href="index_city.html" role="button" class="btn btn-default btn-lg btn-block" id="city-routes">
+                        <img src="img/cityscape.png" class="icon">
+                        <p>都 市 休 閒</p>
+                    </a>
+                    <a href="index_natural.html" role="button" class="btn btn-default btn-lg btn-block" id="nature-routes">
+                        <img src="img/forest.png" class="icon">
+                        <p>自 然 踏 青</p>
+                    </a>
+                    <a href="index_exercise.html" role="button" class="btn btn-default btn-lg btn-block" id="sport-routes">
+                        <img src="img/transport.png" class="icon">
+                        <p>運 動 挑 戰</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.0.4/firebase.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

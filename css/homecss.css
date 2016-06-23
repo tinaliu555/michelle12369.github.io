@@ -1,0 +1,79 @@
+body{
+	background: #261f28 url("../img/homebackground.png") no-repeat fixed top; 
+	background-size: cover;
+	font-family: "筑紫A丸ゴシック","微軟正黑體", sans-serif;
+}
+.container{
+	width: 70%;
+	margin: auto;
+
+	padding-top: 80px;
+}
+#cityBikeLogo{
+	display: block;
+	margin: auto;
+	height: 300px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.btn{
+	margin: auto;
+	box-shadow: 3px 3px 15px #999999;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.3);
+	font-size: 3rem;
+	color: white;
+	width: 300px;
+	height: 300px;
+}
+.btn + .btn{
+	margin-top: 80px;
+}
+#city-routes:focus{
+	background-color: #1b6bb2;
+	color: white;
+	opacity: 0.7;
+}
+#nature-routes:focus{
+	background-color: #469640;
+	color: white;
+	opacity: 0.7;
+}
+#sport-routes:focus{
+	background-color: #ff5252;
+	color: white;
+	opacity: 0.7;
+}
+#city-routes:active{
+	background-color: #1b6bb2;
+	color: white;
+	opacity: 0.7;
+}
+#nature-routes:active{
+	background-color: #469640;
+	color: white;
+	opacity: 0.7;
+}
+#sport-routes:active{
+	background-color: #ff5252;
+	color: white;
+	opacity: 0.7;
+}
+#text{
+	margin: auto;
+	margin-top: 100px;
+	font-size: 4rem;
+}
+.icon{
+	margin: auto;
+	width: 200px;
+}
+#licenses{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 0px;
+	padding-top: 200px;
+	font-size: 2rem;
+	color: white;
+}

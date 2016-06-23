@@ -1,0 +1,339 @@
+body{
+	font-family: "微軟正黑體",arial,helvetica,sans-serif;
+}
+
+/************ nav **************/
+
+#headerAndTitle{
+	position: fixed;
+}
+#header{
+	width: 100%;
+	display: flex;
+	position: fixed;
+	justify-content: space-around;
+	top: 0px;
+	background-color: #261f28; 
+}
+.nav{
+	width: 100px;
+	height: 100px;
+	margin: 40px;
+	margin-top: 45px;
+}
+#cityBikeLogo{
+	display: block;
+	margin: auto;
+	height: 150px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/************** routes list *****************/
+
+#title{
+	margin: auto;
+	font-size: 4.5rem;
+	padding-bottom: 30px;
+}
+#routes-list{
+	height: 80vh;
+	overflow: scroll;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center; 
+}
+.container{
+	width: 100vw;
+	background-color: rgba(255,255,255,0.5);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center; 
+	margin-top: 230px;
+}
+.routes + .routes{
+	margin-top: 50px;
+}
+.routes{
+	color: white;
+	width:700px;
+	height:320px;
+	padding: 40px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+/*	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(https://photo.network.com.tw/scenery/E86DF158-EDFE-4632-A4B6-FF65CD550DEF_f.jpg);
+	background-size: cover;
+	background-position: center;*/
+	box-shadow: 3px 6px 15px #999999;
+}
+h1{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+h1 > p{
+	font-size: 6rem;
+}
+.arrow{
+	width: 90px;
+	height: 90px;
+}
+h2{
+	display: flex;
+	font-size: 3.5rem;
+	padding-top: 20px;
+}
+
+/*********** modal *************/
+
+.blur{
+	-webkit-filter: blur(25px) brightness(50%);
+}
+.modal-header{
+	border: none;
+}
+.modal-header > img{
+	margin:auto;
+}
+.label{
+	color: white;
+	font-size: 5rem;
+	font-weight: normal;
+}
+select{
+	font-size:5rem;
+	border-radius: 10px;
+	border: 3px solid white;
+	color: white;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	display: inline-block;
+	width: 60%;
+	background-color: rgba(255,255,255,0.2);
+}
+.btn{
+	margin: auto;
+	box-shadow: 3px 3px 15px #999999;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.3);
+	font-size: 3rem;
+	color: white;
+	width: 300px;
+	height: 300px;
+}
+.btn + .btn{
+	margin-top: 80px;
+}
+#city-routes:focus{
+	background-color: #1b6bb2;
+	color: white;
+	opacity: 0.7;
+}
+#nature-routes:focus{
+	background-color: #469640;
+	color: white;
+	opacity: 0.7;
+}
+#sport-routes:focus{
+	background-color: #ff5252;
+	color: white;
+	opacity: 0.7;
+}
+#city-routes:active{
+	background-color: #1b6bb2;
+	color: white;
+	opacity: 0.7;
+}
+#nature-routes:active{
+	background-color: #469640;
+	color: white;
+	opacity: 0.7;
+}
+#sport-routes:active{
+	background-color: #ff5252;
+	color: white;
+	opacity: 0.7;
+}
+#text{
+	margin: auto;
+	margin-top: 100px;
+	font-size: 4rem;
+}
+.icon{
+	margin: auto;
+	width: 200px;
+}
+#licenses{
+	display: flex;
+	justify-content: center;
+	padding-top: 270px;
+	font-size: 2rem;
+	color: white;
+}
+label {
+	font-size: 9rem;
+	color:white;
+}
+.btn2{
+	font-size:5rem;
+	border-radius: 30px;
+	border: 3px solid white;
+	color: white;
+	margin:auto;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	justify-content:center; 
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgba(0,0,0,0);
+}
+.search{
+	font-size:150px;
+	justify-content:center; 
+	display: flex;
+	flex-wrap: wrap;
+}
+.modal-content{
+	justify-content:center; 
+	margin-top: 230px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: transparent;
+	box-shadow: none;
+}
+#city-routes:focus{
+	background-color: #1b6bb2;
+	color: white;
+	opacity: 0.7;
+}
+#nature-routes:focus{
+	background-color: #469640;
+	color: white;
+	opacity: 0.7;
+}
+#sport-routes:focus{
+	background-color: #ff5252;
+	color: white;
+	opacity: 0.7;
+}
+#city-routes:active{
+	background-color: #1b6bb2;
+	color: white;
+	opacity: 0.7;
+}
+#nature-routes:active{
+	background-color: #469640;
+	color: white;
+	opacity: 0.7;
+}
+#sport-routes:active{
+	background-color: #ff5252;
+	color: white;
+	opacity: 0.7;
+}
+#text{
+	margin: auto;
+	margin-top: 100px;
+	font-size: 4rem;
+}
+.icon{
+	margin: auto;
+	width: 200px;
+}
+#licenses{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 0px;
+	padding-top: 200px;
+	font-size: 2rem;
+	color: white;
+}
+.btn{
+	margin: auto;
+	box-shadow: 3px 3px 15px #999999;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.3);
+	font-size: 3rem;
+	color: white;
+	width: 300px;
+	height: 300px;
+}
+
+/*******************************************************/
+.r1{
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(https://photo.network.com.tw/scenery/E86DF158-EDFE-4632-A4B6-FF65CD550DEF_f.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.r2{
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(http://www.aily.com.tw/upload/prod_profile/19/334/0416007.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.r3{
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(http://ext.pimg.tw/stellachen524/1416036525-1113081317.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.r4{
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(http://0.share.photo.xuite.net/dbfish66/10c1b97/15612623/836165064_m.jpg );
+	background-size: cover;
+	background-position: center;
+}
+.r5{
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(http://pgw.udn.com.tw/gw/photo.php?u=http://uc.udn.com.tw/photo/2015/12/05/2/1580836.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=1050);
+	background-size: cover;
+	background-position: center;
+}
+.r6{
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(https://sleeper28.files.wordpress.com/2013/04/dsc06389.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.r7{
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(http://static.panoramio.com/photos/original/45854302.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.r8{
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(https://c1.staticflickr.com/3/2912/14237232985_9b15466ae1_b.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.r9{
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(https://c1.staticflickr.com/5/4139/4752081154_030f72a9cc_b.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.r10{
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(https://c1.staticflickr.com/5/4139/4782367871_b03aea82c3.jpg);
+	background-size: cover;
+	background-position: center;
+}
