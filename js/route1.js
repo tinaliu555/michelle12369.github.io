@@ -29,6 +29,9 @@
       spots.on("value", function(snap) {
           var data = snap.val();
           console.log(data);
+          if (data === null) {
+              alert("還沒有此類資料，趕快新增吧");
+          }
           for (var d in data) {
               //console.log(typeof data[d].lat);
               markers(data[d].lat, data[d].long, data[d].word, d, sort);
@@ -44,7 +47,7 @@
 
   function markers(lat1, long1, word, key, sort) {
       //marker
-      storageRef.child('images/route1/'+ sort + '/' + key + ".png").getDownloadURL().then(function(url) {
+      storageRef.child('images/route1/' + sort + '/' + key + ".png").getDownloadURL().then(function(url) {
           switch (sort) {
               case "spot":
                   var marker = new google.maps.Marker({
@@ -104,12 +107,12 @@
 
           google.maps.event.addDomListener(infowindow, 'domready', function() {
 
-              $(".test").click(function() {
-                  // $('#myModal').modal('show');
-                  $(".test").attr("width","150px");
-              });
-          })
-          // google.maps.event.addDomListener(infowindow,'closeclick',function(){
+                  $(".test").click(function() {
+                      // $('#myModal').modal('show');
+                      $(".test").attr("width", "150px");
+                  });
+              })
+              // google.maps.event.addDomListener(infowindow,'closeclick',function(){
 
           //   $(".test").attr("width","50px");
           // });

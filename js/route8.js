@@ -28,6 +28,9 @@
       spots.on("value", function(snap) {
           var data = snap.val();
           console.log(data);
+                    if(data===null){
+            alert("還沒有此類資料，趕快新增吧");
+          }
           for (var d in data) {
               //console.log(typeof data[d].lat);
               markers(data[d].lat, data[d].long, data[d].word, d, sort);
