@@ -186,9 +186,11 @@ function uploadImg(picFile, sort, key) {
     }, function(error) {
         console.log(error);
     }, function() {
-       $("header").prepend('<div class="alert alert-success alert-dismissible" role="alert" style="margin-left:20px; margin-right:20px;"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>上傳完成</div>');
-        $("header .alert").fadeIn("slow");
-  });
+        $("header").prepend('<div class="alert alert-success alert-dismissible" role="alert" style="margin-left:20px; margin-right:20px; padding-top:10px; padding-bottom:10px"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>上傳完成</div>');
+
+
+
+    });
     //恢復預設值
     $("#picData").val("");
     $("#typeinfo").attr("placeholder", "在此輸入簡介").val("").focus().blur();
