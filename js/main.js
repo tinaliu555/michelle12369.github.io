@@ -106,7 +106,7 @@ $(".report_classification").on("click", function() {
     }
 });
 var nowPos;
-// $("#getPos").click(function() {
+$("#getPos").click(function() {
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
         nowPos = {
@@ -121,7 +121,7 @@ if (navigator.geolocation) {
     // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
 }
-// });
+});
 
 $("#send").on("click", function(e) {
     e.preventDefault();
