@@ -80,27 +80,27 @@ body{
 
 #spot {
     flex: 1;
-    background-color: rgb(224, 97, 98);
+    background-color: rgba(224, 97, 98,0.8);
 }
 
 #food {
     flex: 1;
-    background-color: rgb(224, 197, 130);
+    background-color: rgba(224, 197, 130,0.8);
 }
 
 #rest {
     flex: 1;
-    background-color: rgb(119, 153, 86);
+    background-color: rgba(119, 153, 86,0.8);
 }
 
 #repair {
     flex: 1;
-    background-color: rgb(85, 115, 193);
+    background-color: rgba(85, 115, 193,0.8);
 }
 
 #Barrier{
     flex: 1;
-    background-color: rgb(115,60 , 115);
+    background-color: rgba(115,60 , 115,0.8);
 }
 
 .classification:hover {
