@@ -59,21 +59,21 @@ $(".region1").each(function(){
   var first = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22';
     var last = '%20City%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
 var a = $(this).text();      
-console.log("LBJ1"+a);
+//console.log("LBJ1"+a);
 counter=counter+1;
-console.log(city[$(this).text()]);
-console.log(first+city[$(this).text()]+last);
+//console.log(city[$(this).text()]);
+//console.log(first+city[$(this).text()]+last);
 $.getJSON(first+city[$(this).text()]+last,function(data){
       var currentTemperature = data.query.results.channel.item.condition.temp  ; // 就可以找到現在溫度
       var getweather=data.query.results.channel.item.condition;
       getweather=getweather['text'];
       // test.push(getweather);
       // console.log("test:"+test);
-      console.log("weather:"+getweather);
+      //console.log("weather:"+getweather);
       //setVariable(a,currentTemperature );
       var id="route1";
       sky(getweather , id);
-      console.log(getweather+","+id);
+      //console.log(getweather+","+id);
       // start animation!
     }
     )
@@ -84,21 +84,21 @@ $(".region2").each(function(){
   var first = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22';
     var last = '%20City%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
 var a = $(this).text();      
-console.log("LBJ2"+a);
+//console.log("LBJ2"+a);
 counter=counter+1;
-console.log(city[$(this).text()]);
-console.log(first+city[$(this).text()]+last);
+//console.log(city[$(this).text()]);
+//console.log(first+city[$(this).text()]+last);
 $.getJSON(first+city[$(this).text()]+last,function(data){
       var currentTemperature = data.query.results.channel.item.condition.temp  ; // 就可以找到現在溫度
       var getweather=data.query.results.channel.item.condition;
       getweather=getweather['text'];
       // test.push(getweather);
       // console.log("test:"+test);
-      console.log("weather:"+getweather);
+      //console.log("weather:"+getweather);
       //setVariable(a,currentTemperature );
       var id="route2";
       sky(getweather , id);
-      console.log(getweather+","+id);
+      //console.log(getweather+","+id);
       // start animation!
     }
     )
@@ -110,21 +110,21 @@ $(".region3").each(function(){
   var first = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22';
     var last = '%20City%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
 var a = $(this).text();      
-console.log("LBJ3"+a);
+//console.log("LBJ3"+a);
 counter=counter+1;
-console.log(city[$(this).text()]);
-console.log(first+city[$(this).text()]+last);
+//console.log(city[$(this).text()]);
+//console.log(first+city[$(this).text()]+last);
 $.getJSON(first+city[$(this).text()]+last,function(data){
       var currentTemperature = data.query.results.channel.item.condition.temp  ; // 就可以找到現在溫度
       var getweather=data.query.results.channel.item.condition;
       getweather=getweather['text'];
       // test.push(getweather);
       // console.log("test:"+test);
-      console.log("weather:"+getweather);
+      //console.log("weather:"+getweather);
       //setVariable(a,currentTemperature );
       var id="route3";
       sky(getweather , id);
-      console.log(getweather+","+id);
+      //console.log(getweather+","+id);
       // start animation!
     }
     )
@@ -137,21 +137,21 @@ $(".region4").each(function(){
   var first = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22';
     var last = '%20City%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
 var a = $(this).text();      
-console.log("LBJ4"+a);
+//console.log("LBJ4"+a);
 counter=counter+1;
-console.log(city[$(this).text()]);
-console.log(first+city[$(this).text()]+last);
+//console.log(city[$(this).text()]);
+//console.log(first+city[$(this).text()]+last);
 $.getJSON(first+city[$(this).text()]+last,function(data){
       var currentTemperature = data.query.results.channel.item.condition.temp  ; // 就可以找到現在溫度
       var getweather=data.query.results.channel.item.condition;
       getweather=getweather['text'];
       // test.push(getweather);
       // console.log("test:"+test);
-      console.log("weather:"+getweather);
+      //console.log("weather:"+getweather);
       //setVariable(a,currentTemperature );
       var id="route4";
       sky(getweather , id);
-      console.log(getweather+","+id);
+      //console.log(getweather+","+id);
       // start animation!
     }
     )
@@ -174,7 +174,7 @@ var sky=function(getweather , id){
   var skycons = new Skycons({"color": "white"});
 
   skycons.play();
-  console.log("Sky in");
+  //console.log("Sky in");
 
 
   if(weather[getweather]=='CLOUDY'){
